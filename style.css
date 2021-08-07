@@ -1,0 +1,377 @@
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	position: relativly;
+	min-height: 100vh;
+	width: 100%;
+	
+	font-family: "Poppins", sans-serif;
+	padding: 0px;
+	
+	display: flex;
+	
+}
+
+.material-icons
+{
+	font-size: 5px;
+}
+.sidebar
+{
+	position: fixed;
+	top:0px;
+	left: 0px;
+	
+	width: 62px;
+	height: 100%;
+
+	z-index: 99;
+	
+	background-color: #11101d;
+	/* white-space: nowrap; */
+	padding: 14px 6px;
+	
+	transition: all 0.5s ease;
+}
+
+.sidebar.open
+{
+	width: 240px;
+}
+
+.sidebar .logo-content
+{
+	display: flex;
+	color: white;
+	width: 100%;
+	position: relative;
+}
+
+.sidebar .logo-content .logo
+{
+	display: flex;
+	height: 50px;
+	align-items: center;
+	position: relative;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.4s ease;
+}
+
+.sidebar.open .logo-content .logo
+{
+	transition: all 0.4s ease;
+	opacity: 1;
+}
+
+.sidebar .logo-content .logo i
+{
+	font-size: 30px;
+	margin-right: 5px;
+}
+
+
+.sidebar .logo-content .logo .logo-name
+{
+	font-size: 20px;
+	font-weight: 400;
+	pointer-events: none;
+}
+
+.sidebar .logo-content #btn
+{
+
+	font-size: 20px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	line-height: 50px;
+	padding: 0px;
+	margin: 0;
+	border-radius: 12px;
+	 background: #11101d;
+}
+
+.sidebar .logo-content #btn:hover
+{
+}
+
+.sidebar ul
+{
+	margin: 0;
+	margin-top: 20px;
+	padding: 0;
+	
+	width: 100%;
+
+}
+
+.sidebar ul li
+{
+	position: relative;
+	width: 100%;
+	list-style: none;
+	height: 50px;
+	margin: 5px 0px;
+	padding: 0;
+}
+
+.sidebar ul li .tooltip
+{
+	
+	position: absolute;
+	height: 35px;
+	width: 130px;
+	text-align: center;
+	background: #fff;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	
+	left: 60px;
+	top: 0;
+	border-radius: 12px;
+	opacity: 0;
+	pointer-events: none;
+	line-height: 35px;
+}
+
+.sidebar ul li:hover .tooltip
+{
+	transition: all 0.4s ease;
+	opacity: 1;
+	top: 9px;
+}
+
+.sidebar.open ul li .tooltip
+{
+	display: none;
+}
+
+.sidebar li a
+{
+	position: relarive;
+	color: #fff;
+	height: 100%;
+	min-width: 50px;
+	width: 100%;
+	display: flex;
+	margin: 0;
+	align-items: center;
+	text-decoration: none;
+	border-radius: 12px;
+	transition: all 0.4s ease;
+
+}
+
+
+.sidebar li a i
+{
+	height: 50px;
+	min-width: 50px;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 12px;
+	
+}
+
+.sidebar li a .link
+{
+	white-space: nowrap;
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity 0.4s ease;
+}
+
+.sidebar.open li a .link
+{
+	transition: opacity 0.4s ease;
+	opacity: 1;
+}
+
+.sidebar li a:hover
+{
+	background-color: #fff;
+	color: #11101d;
+}
+
+
+.sidebar ul li input
+{
+	position: absolute;
+	height: 50px;
+	width: 100%;
+	left:0;
+	top: 0;
+	border-radius: 12px;
+	border: none;
+	outline: none;
+	text-align: left;
+	padding: 0;
+	padding-left: 50px;
+	background: #11101d;
+	font-size: 22px;
+	line-height: 50px;
+	color: #fff;
+	transition: all 0.4s ease;
+	
+}
+
+.sidebar.open ul li input
+{
+	transition: all 0.4s ease;
+	background: #1d1b31;
+}
+
+.sidebar ul li .bx-search
+{
+
+	position: absolute;
+	z-index:1;
+	font-size: 22px;
+	color: #fff;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 12px;
+	transition: all 0.4s ease;
+}
+
+.sidebar ul li .bx-search:hover
+{
+	transition: all 0.4s ease;
+	background: #fff;
+	color: #111;
+	
+}
+
+.sidebar.open ul li .bx-search:hover
+{
+	transition: all 0.4s ease;
+	background: #1d1b31;
+	color: #fff;
+	
+}
+
+.sidebar .profile-content
+{
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	color: #fff;
+	white-space: nowrap;
+}
+
+.sidebar .profile-content .profile
+{
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 10px 6px;
+	height: 60px;
+	width: 100%;
+	background: #1d1b31;
+	transition: all 0.4s ease;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.sidebar.open .profile-content .profile
+{
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 10px 6px;
+	height: 60px;
+	width: 100%;
+	background: #1d1b31;
+	transition: all 0.4s ease;
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.sidebar .profile-content .profile img
+{
+	border-radius: 12px;
+	height: 45px;
+	width: 45px;
+	object-fit: cover;
+	margin-right: 6px;
+}
+
+.sidebar .profile-content .profile .name-dis
+{
+	position: relative;
+	height: 45px;
+	
+}
+
+.sidebar .profile-content .profile .name
+{
+	font-size: 15px;
+}
+
+.sidebar .profile-content .profile .dis
+{
+	font-size: 12px;
+
+	
+}
+
+.sidebar .profile-content .bx-log-out
+{
+	position: absolute;
+	right: 6px;
+	top: 5px;
+	background: #11101d;
+	height: 50px;
+	width: 50px;
+	font-size: 22px;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 12px;
+	transition: all 0.4s ease;
+}
+
+.sidebar.open .profile-content .bx-log-out
+{
+	transition: all 0.4s ease;
+	background: #1d1b31;
+}
+
+main
+{
+	position: absolute;
+	top: 0;
+	left: 62px;
+	width: calc(100% - 62px);
+	height: 100%;
+	transition: all 0.5s ease;
+}
+
+.sidebar.open ~ main
+{
+	transition: all 0.5s ease;
+	left: 240px;
+	width: calc(100% - 240px);
+}
+
+main .home-heading
+{
+	font-size: 25px;
+	
+	margin-top: 12px;
+	margin-left: 12px;
+	
+}
