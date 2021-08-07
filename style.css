@@ -100,10 +100,14 @@ body
 	margin: 0;
 	border-radius: 12px;
 	 background: #11101d;
+	 transition: all 0.4s ease;
 }
 
 .sidebar .logo-content #btn:hover
 {
+	background: #fff;
+	color: #11101d;
+	transition: all 0.4s ease;
 }
 
 .sidebar ul
@@ -342,6 +346,20 @@ body
 	line-height: 50px;
 	border-radius: 12px;
 	transition: all 0.4s ease;
+}
+
+.sidebar .profile-content .bx-log-out:hover
+{
+	transition: all 0.4s ease;
+	background: #fff;
+	color: #11101d;
+}
+
+.sidebar.open .profile-content .bx-log-out:hover
+{
+	transition: all 0.4s ease;
+	background: #fff;
+	color: #1d1b31;
 }
 
 .sidebar.open .profile-content .bx-log-out
