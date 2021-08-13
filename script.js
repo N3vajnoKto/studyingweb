@@ -62,6 +62,13 @@ mBtn[0].onclick = function()
 
 					} , 500 );
 
+	setTimeout(() => {
+		for (let i=0; i<5; ++i)
+					{
+						mBtn[i].style.pointerEvents = 'auto';
+					}
+				}, 600 );
+
 }
 
 
@@ -96,6 +103,13 @@ mBtn[1].onclick = function()
 
 					} , 500 );
 
+	setTimeout(() => {
+		for (let i=0; i<5; ++i)
+					{
+						mBtn[i].style.pointerEvents = 'auto';
+					}
+				}, 600 );
+
 }
 
 mBtn[2].onclick = function()
@@ -129,6 +143,13 @@ mBtn[2].onclick = function()
 
 					} , 500 );
 
+	setTimeout(() => {
+		for (let i=0; i<5; ++i)
+					{
+						mBtn[i].style.pointerEvents = 'auto';
+					}
+				}, 600 );
+
 }
 
 mBtn[3].onclick = function()
@@ -156,11 +177,17 @@ mBtn[3].onclick = function()
 
 	for (let i=0; i<5; ++i)
 	{
-		mBtn[i].style.pointerEvents = 'auto';
 		mBtn[i].style.left =  i*40+8*(i+1) + 'px';
 	}
 
 					} , 500 );
+
+	setTimeout(() => {
+		for (let i=0; i<5; ++i)
+					{
+						mBtn[i].style.pointerEvents = 'auto';
+					}
+				}, 600 );
 
 }
 
@@ -189,10 +216,16 @@ mBtn[4].onclick = function()
 
 	for (let i=0; i<5; ++i)
 	{
-		mBtn[i].style.pointerEvents = 'auto';
 		mBtn[i].style.left =  i*40+8*(i+1) + 'px';
 	}
 
 					} , 500 );
+
+	setTimeout(() => {
+		for (let i=0; i<5; ++i)
+					{
+						mBtn[i].style.pointerEvents = 'auto';
+					}
+				}, 600 );
 
 }
