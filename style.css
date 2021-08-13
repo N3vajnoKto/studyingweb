@@ -4,6 +4,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: "Popins", sans-serif;
 }
 
 body
@@ -371,6 +372,7 @@ body
 main
 {
 	position: absolute;
+	display: flex;
 	top: 0;
 	left: 62px;
 	width: calc(100% - 62px);
@@ -392,4 +394,65 @@ main .home-heading
 	margin-top: 12px;
 	margin-left: 12px;
 	
+}
+
+main .footer-menu
+{
+	position: relative;
+	height:600px;
+	width: 350px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #fff;
+	box-shadow: 0 5px 10px  rgba(0, 0, 0, 0.2);
+	border-radius: 12px;
+	margin: 30px;
+
+}
+
+main .footer-menu .display
+{
+	position: relative;
+	height: 500px;
+	width: 250px;
+	padding: 0;
+	background: #e6e6e6;
+}
+
+main .footer-menu .display .nav-content
+{
+	position: absolute;
+	bottom: 0;
+	width: 250px;
+	height: 50px;
+	background: pink;
+	padding: 0;
+	color: #fff;
+	margin: 0px;
+	display: flex;
+	align-items: center;
+	transition: all 0.3s ease;
+}
+
+main .footer-menu .display .nav-content li
+{
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	background: pink;
+	border-radius: 20px;
+	list-style: none;
+	line-height: 40px;
+	text-align: center;
+	transition: all 0.3s ease;
+
+}
+
+main .footer-menu .display .nav-content li.active
+{
+	transition: all 0.3s ease;
+	pointer-events: none;
+	position: absolute;
+	transform: translatey(-50px);
 }
