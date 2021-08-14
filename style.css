@@ -102,6 +102,7 @@ body
 	border-radius: 12px;
 	 background: #11101d;
 	 transition: all 0.4s ease;
+	 
 }
 
 .sidebar .logo-content #btn:hover
@@ -399,7 +400,7 @@ main .home-heading
 main .footer-menu
 {
 	position: relative;
-	height:600px;
+	height: 650px;
 	width: 350px;
 	display: flex;
 	align-items: center;
@@ -411,25 +412,198 @@ main .footer-menu
 
 }
 
+main .footer-menu .phone
+{
+	position: relative;
+	height: 550px;
+	width: 250px;
+	border-radius: 12px;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: black;
+	overflow: hidden;
+}
+
+main .footer-menu .phone .left-gr
+{
+	position: absolute;
+	height: 550px;
+	width: 18px;
+	left: 0;
+	top: 0;
+	z-index: 3;
+
+	background: linear-gradient(to right, rgba(256,256,256,0.4), rgba(256,256,256,0));
+	
+}
+
+main .footer-menu .phone .right-gr
+{
+	position: absolute;
+	height: 550px;
+	width: 18px;
+	right: 0;
+	top: 0;
+	z-index: 3;
+
+	background: linear-gradient(to left, rgba(256,256,256,0.4), rgba(256,256,256,0));
+	
+}
+
+main .footer-menu .phone .d7
+{
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: 0;
+	left: 0;
+	z-index: 4;
+	pointer-events: none;
+	border-top: 800px solid rgba(256,256,256,0.1);
+	border-right: 150px solid transparent;
+}
+
+main .footer-menu .phone .camera-1
+{
+	position: absolute;
+
+	height: 10px;
+	width: 10px;
+	left: 95px;
+	top: 8px;
+	border-radius: 50%;
+	background: rgb(31, 31, 34);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main .footer-menu .phone .camera-2
+{
+	position: absolute;
+
+	height: 10px;
+	width: 10px;
+	left: 145px;
+	top: 8px;
+	border-radius: 50%;
+	background: rgb(31, 31, 34);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main .footer-menu .phone .objective
+{
+
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
+	background: rgb(0, 0, 44); 
+}
+
+main .footer-menu .phone .dinamic
+{
+	position: absolute;
+
+	height: 5px;
+	width: 30px;
+	left: 110px;
+	top: 10px;
+	border-radius: 2px;
+	background: rgb(29, 29, 32);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 main .footer-menu .display
 {
 	position: relative;
 	height: 500px;
 	width: 250px;
+	border-radius: 12px;
+	overflow: hidden;
 	padding: 0;
-	background: #e6e6e6;
 }
+
+main .footer-menu .display .page-1
+{
+	position: absolute;
+	height: 500px;
+	width: 250px;
+	left: 250px;
+	overflow: hidden;
+	padding: 0;
+	background: brown;
+	transition: all 0.3s ease;
+}
+
+main .footer-menu .display .page-2
+{
+	position: absolute;
+	height: 500px;
+	width: 250px;
+	left: 250px;
+	overflow: hidden;
+	padding: 0;
+	background: green;
+	transition: all 0.3s ease;
+}
+
+main .footer-menu .display .page-3
+{
+	position: absolute;
+	height: 500px;
+	width: 250px;
+	left: 0;
+	overflow: hidden;
+	padding: 0;
+	background: powderblue;
+	transition: all 0.3s ease;
+}
+
+main .footer-menu .display .page-4
+{
+	position: absolute;
+	height: 500px;
+	width: 250px;
+	left: 250px;
+	overflow: hidden;
+	padding: 0;
+	background: purple;
+	transition: all 0.3s ease;
+}
+
+main .footer-menu .display .page-5
+{
+	position: absolute;
+	height: 500px;
+	width: 250px;
+	left: 250px;
+	overflow: hidden;
+	padding: 0;
+	background: orange;
+	transition: all 0.3s ease;
+}
+
 
 main .footer-menu .display .nav-content
 {
 	position: absolute;
 	bottom: 0;
 	width: 250px;
-	height: 50px;
+	height: 40px;
 	background: pink;
 	padding: 0;
-	color: #fff;
+	color: #FFF;
 	margin: 0px;
+	z-index: 2;
 	display: flex;
 	align-items: center;
 	transition: all 0.3s ease;
@@ -452,7 +626,6 @@ main .footer-menu .display .nav-content li
 main .footer-menu .display .nav-content li.active
 {
 	transition: all 0.3s ease;
-	pointer-events: none;
 	position: absolute;
 	transform: translatey(-50px);
 }
